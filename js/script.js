@@ -252,7 +252,7 @@
 
       var formData = new FormData(form);
 
-      fetch('/', {
+      fetch(form.getAttribute('action') || window.location.pathname, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
