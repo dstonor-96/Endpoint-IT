@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Endpoint IT</title>
+  <meta name="description" content="Get in touch with Endpoint IT. Book a callout, ask about retainers, or send a general enquiry. Next business day response.">
+  <meta property="og:title" content="Contact — Endpoint IT">
+  <meta property="og:description" content="Get in touch with Endpoint IT. Book a callout, ask about retainers, or send a general enquiry. Next business day response.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://endpointit.com.au/pages/contact.html">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Endpoint IT — Home">
+        <img src="../images/logo.svg" alt="" width="36" height="36">
+        <span>Endpoint IT</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="clients.html" class="nav-link">Clients</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container" data-reveal>
+        <span class="badge">Contact</span>
+        <h1 style="margin-top: 1rem;">Get in Touch</h1>
+        <p>Send a message, book a callout, or ask about retainers. I respond within one business day.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="sr-only">Contact Form</h2>
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div data-reveal>
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" aria-label="Contact form">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" autocomplete="name" required>
+                  <div class="form-error" id="name-error" role="alert">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" autocomplete="email" required>
+                  <div class="form-error" id="email-error" role="alert">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Phone <span style="color: var(--text-muted); font-weight: 400;">(optional)</span></label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label for="contact-suburb" class="form-label">Suburb <span aria-hidden="true">*</span></label>
+                  <select id="contact-suburb" name="suburb" class="form-select" required>
+                    <option value="" disabled selected>Select your suburb</option>
+                    <option value="Joondalup">Joondalup</option>
+                    <option value="Wanneroo">Wanneroo</option>
+                    <option value="Clarkson">Clarkson</option>
+                    <option value="Butler">Butler</option>
+                    <option value="Currambine">Currambine</option>
+                    <option value="Mindarie">Mindarie</option>
+                    <option value="Kinross">Kinross</option>
+                    <option value="Alkimos">Alkimos</option>
+                    <option value="Yanchep">Yanchep</option>
+                    <option value="Other">Other (please specify in message)</option>
+                  </select>
+                  <div class="form-error" id="suburb-error" role="alert">Please select your suburb.</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-service" class="form-label">What do you need help with? <span aria-hidden="true">*</span></label>
+                <select id="contact-service" name="service" class="form-select" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <optgroup label="Residential">
+                    <option value="PC/Laptop Setup">New PC / Laptop Setup</option>
+                    <option value="Virus/Malware Removal">Virus / Malware Removal</option>
+                    <option value="Data Transfer">Data Transfer (Old PC to New)</option>
+                    <option value="Printer/Peripheral Setup">Printer / Peripheral Setup</option>
+                    <option value="NBN Troubleshooting">NBN / Internet Troubleshooting</option>
+                    <option value="General Callout">General Callout</option>
+                  </optgroup>
+                  <optgroup label="Business">
+                    <option value="Retainer Enquiry">Business Retainer Enquiry</option>
+                    <option value="M365 Migration">M365 / Cloud Migration</option>
+                    <option value="Web Design">Web Design</option>
+                  </optgroup>
+                  <option value="Other">Other / Not Sure</option>
+                </select>
+                <div class="form-error" id="service-error" role="alert">Please select a service.</div>
+              </div>
+              <div class="form-group">
+                <span class="form-label">Preferred contact method</span>
+                <div class="form-radio-group">
+                  <label class="form-radio">
+                    <input type="radio" name="contact-method" value="Email" checked>
+                    Email
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="contact-method" value="Phone">
+                    Phone
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="contact-method" value="Either">
+                    Either is fine
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Briefly describe the issue or what you're looking for..." required></textarea>
+                <div class="form-error" id="message-error" role="alert">Please enter a message.</div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div data-reveal="right">
+            <div class="contact-info">
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:contact@endpointit.com.au">contact@endpointit.com.au</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">📍</span>
+                <div>
+                  <h4>Service Area</h4>
+                  <p>Perth northern suburbs — Joondalup, Wanneroo, Clarkson, Butler, Currambine, and surrounding areas.</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">🕐</span>
+                <div>
+                  <h4>Hours</h4>
+                  <p>Evenings and weekends. I'm not available during standard business hours.</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">⏱️</span>
+                <div>
+                  <h4>Response Time</h4>
+                  <p>Every enquiry gets a response within <strong>one business day</strong>. No emergency on-call.</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">📅</span>
+                <div>
+                  <h4>Book a Time</h4>
+                  <p>Prefer to book directly? Use the <strong>Calendly booking link</strong> (coming soon) to pick a time that works for you.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band">
+      <div class="container" data-reveal>
+        <h2>Not Sure What You Need?</h2>
+        <p>Just describe the problem. I'll point you to the right service — no obligation, no upselling.</p>
+        <div class="btn-group">
+          <a href="services.html" class="btn btn-secondary">Browse Services</a>
+          <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../index.html" class="footer-logo" aria-label="Endpoint IT — Home">
+            <img src="../images/logo.svg" alt="" width="30" height="30">
+            <span>Endpoint IT</span>
+          </a>
+          <p>Practical IT support for homes and small businesses in Perth's northern suburbs. No jargon, no locked contracts.</p>
+          <div class="footer-cta">
+            <a href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Home Callouts</a></li>
+            <li><a href="services.html">Business Retainers</a></li>
+            <li><a href="services.html">Cloud Migration</a></li>
+            <li><a href="services.html">Web Design</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="clients.html">Who We Help</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@endpointit.com.au">contact@endpointit.com.au</a></li>
+            <li>Perth Northern Suburbs</li>
+          </ul>
+          <dl class="footer-hours">
+            <dt>Hours</dt>
+            <dd>Evenings &amp; Weekends</dd>
+            <dt>Response</dt>
+            <dd>Next business day</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Endpoint IT. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Footer links">
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
